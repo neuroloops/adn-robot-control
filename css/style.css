@@ -1,0 +1,70 @@
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
+  margin: auto;
+}
+.box {
+  width: 120px;
+  height: 120px;
+}
+.btn {
+  cursor: pointer;
+  text-align: center;
+}
+.myButton {
+  background-color: #44c767;
+  border: 1px solid #18ab29;
+}
+.myButton:hover {
+  background-color: #5cbf2a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.myButton a {
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin: auto;
+  text-decoration: none;
+  font-size: 6rem;
+  font-weight: bold;
+}
+.haut {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+.gauche {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+.droite {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+.bas {
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+.stop {
+  background-color: red;
+  padding: 20px;
+  width: 350px;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid darkred;
+}
+.stop a {
+  text-decoration: none;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: white;
+}
+.stop:active {
+  background-color: darkred;
+  position: relative;
+  top: 1px;
+}

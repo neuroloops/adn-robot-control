@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="control">
+      <div class="box"></div>
+      <div class="box btn myButton haut">
+        <a href="#" id="haut">&uarr;</a>
+      </div>
+      <div class="box"></div>
+      <div class="box btn myButton gauche">
+        <a href="#" id="gauche">&larr;</a>
+      </div>
+      <div class="box"></div>
+      <div class="box btn myButton droite">
+        <a href="#" id="droite">&rarr;</a>
+      </div>
+      <div class="box btn myButton bas">
+        <a href="#" id="bas">&darr;</a>
+      </div>
+    </div>
+    <div class="stop btn">
+      <a href="#" id="stop">STOP</a>
+    </div>
+    <script>
+      const commande = (direction) => {
+        document.getElementById(direction).addEventListener("click", () => {
+          request(direction);
+        });
+      };
+      const request = (direction) => {
+        const Http = new XMLHttpRequest();
+        const url = `192.168.4.1/${direction}`;
+        console.log(url);
+
+        Http.open("GET", url);
+        Http.send();
+      };
+      commande("haut");
+      commande("gauche");
+      commande("droite");
+      commande("bas");
+      commande("stop");
+    </script>
+  </body>
+</html>
