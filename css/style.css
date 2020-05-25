@@ -52,14 +52,14 @@
 .stop {
   background-color: red;
   padding: 20px;
-  width: 350px;
+  width: 250px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 100px;
   border: 2px solid darkred;
 }
 .stop a {
   text-decoration: none;
-  font-size: 6rem;
+  font-size: 4rem;
   text-transform: uppercase;
   color: white;
 }
